@@ -1,0 +1,52 @@
+﻿<%--SWDV-235 Spring Semester 2020
+Author: Kait Low
+Date: 4/27/2020
+Modified: 4/27/2020
+FileName: Site1.Master--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="DiskInventory.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Kait's Disk Inventory</title>
+    <link href="Content/styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="form-horizontal">
+        <div class="container">
+
+           <header class="jumbotron">
+                <img ID="logo" src="Images/logo.png"alt="Kait's Disk Inventory" style="height: 200px; width: 300px"  />
+               <br />
+
+            <nav class="horizontal">
+		        <ul style="height: 37px">
+		        <li><a href="default.aspx">Home</a></li>
+		        <li><a href="Artist.aspx">Artists</a></li>
+		        <li><a href="Disk.aspx">Disks</a></li>
+                <li><a href="Borrower.aspx">How to Borrow</a></li>
+		        </ul>		
+	         </nav>	
+           </header>
+            <main>
+
+	       
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+            <footer>     
+                <p>Follow us on Facebook and Instagram!</p>
+                <a href="https://www.facebook.com/" target="_blank" ><img id="mediaLink" src="images/facebook.png" alt="Facebook" /></a> 
+                <a href="https://www.instagram.com/" target="_blank" ><img  src="images/instagram.png" alt="Instagram" /></a>
+            </footer>
+            <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+                    </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>

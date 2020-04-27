@@ -1,0 +1,125 @@
+﻿/*SWDV-235 Spring Semester 2020
+Author: Kait Low
+Date: 4/27/2020
+Modified: 4/27/2020
+FileName: styles.css*/
+
+
+/*~~ Main Styles ~~*/
+html {
+    background-color: #122620;
+}
+
+body {
+    background-color: #F4EBD0;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 0px;
+}
+header {
+    background-color: #D6AD60;
+    padding-bottom: 10px;
+}
+img#logo {
+    border-radius: 50px;
+    border: 5px solid #122620;
+    margin-right: 50%;
+    margin-left: 40%;
+}
+/*~~header Styles~~*/
+nav {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+    opacity: 0.8;
+    font-family: 'Courier New'; 
+    margin-right: 0px;
+}
+
+nav ul li {
+    display: inline;
+    align-content: space-around;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #122620;
+    text-shadow: #F4EBD0;
+    transition: color 0.5s ease-in 0.5s, font-size 0.5s ease, letter-spacing 1s ease-out, text-shadow 1s cubic-bezier(0.6, 0, 0.8, 0.5);
+}
+
+nav ul li a:hover {
+    color: #F4EBD0;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-shadow: rgba(0, 0, 0, 0.5) 15px -3px 8px;
+}
+
+/*~~ Footer Styles ~~*/
+footer {
+    background-color: #D6AD60;
+    height: 70px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    font-family: 'Courier New';
+}
+
+footer p {
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 3px;
+    color: #122620;
+    text-decoration: underline;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+footer img#mediaLink {
+    display: inline;
+    padding-left: 44%
+}
+
+footer img {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+/*~~ Text Styels ~~*/
+h1 {
+    font-size: 1.3em;
+    font-family: 'Palatino Linotype';
+    color: #122620;
+    padding-left: 15%;
+}
+p {
+    font-size: 1.05em;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/*~~ Form Styles ~~*/
+fieldset {
+    border-color: #122620;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: left;
+    margin-bottom: 0px;
+}
+div {
+    font-size: 1.05em;
+    color: #122620;
+}
+div.Buttons {
+    text-align: center;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
