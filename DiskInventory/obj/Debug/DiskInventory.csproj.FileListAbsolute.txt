@@ -56,5 +56,4 @@ C:\DiskInventory\DiskInventory\obj\Debug\DiskInventory.csproj.CoreCompileInputs.
 C:\DiskInventory\DiskInventory\obj\Debug\DiskInventory.csproj.CopyComplete
 C:\DiskInventory\DiskInventory\obj\Debug\DiskInventory.dll
 C:\DiskInventory\DiskInventory\obj\Debug\DiskInventory.pdb
-C:\DiskInventory\DiskInventory\obj\Debug\DiskInventory.csprojAssemblyReference.cache
 C:\DiskInventory\DiskInventory\bin\AspNet.ScriptManager.jQuery.dll

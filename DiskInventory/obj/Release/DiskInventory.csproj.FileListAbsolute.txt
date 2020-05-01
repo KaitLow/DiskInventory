@@ -57,3 +57,4 @@ C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.csproj.CoreCompileInput
 C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.csproj.CopyComplete
 C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.dll
 C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.pdb
+C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.csprojAssemblyReference.cache

@@ -1,7 +1,8 @@
 ﻿<%--SWDV-235 Spring Semester 2020
 Author: Kait Low
 Date: 4/27/2020
-Modified: 4/27/2020
+Last Modified: 4/27/2020
+Description: Master page of DiskInventory
 FileName: Site1.Master--%>
 
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="DiskInventory.Site1" %>

@@ -14,22 +14,22 @@ namespace DiskInventory
            
         }
 
-        protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-            if (Page.IsValid)
-            {
-                lblMessage.Text = txtFirstName.Text + " " + txtLastName.Text + " is added to the database.";
-                txtFirstName.Text = "";
-                txtLastName.Text = "";
-                txtPhone.Text = "";
-            }
-        }
+        //protected void btnSubmit_Click(object sender, EventArgs e)
+        //{
+        //    if (Page.IsValid)
+        //    {
+        //        lblMessage.Text = txtFirstName.Text + " " + txtLastName.Text + " is added to the database.";
+        //        txtFirstName.Text = "";
+        //        txtLastName.Text = "";
+        //        txtPhone.Text = "";
+        //    }
+        //}
 
-        protected void btnClear_Click(object sender, EventArgs e)
-        {
-            txtFirstName.Text = "";
-            txtLastName.Text = "";
-            txtPhone.Text = "";
-        }
+        //protected void btnClear_Click(object sender, EventArgs e)
+        //{
+        //    txtFirstName.Text = "";
+        //    txtLastName.Text = "";
+        //    txtPhone.Text = "";
+        //}
     }
 }

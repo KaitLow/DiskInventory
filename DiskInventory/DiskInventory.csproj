@@ -76,7 +76,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Disk.aspx" />
     <Content Include="Images\facebook.png" />
-    <Content Include="Images\headset.jpg" />
+    <Content Include="libman.json" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\instagram.png" />
