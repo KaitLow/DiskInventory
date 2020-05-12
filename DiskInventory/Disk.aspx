@@ -1,7 +1,7 @@
 ﻿<%--SWDV-235 Spring Semester 2020
 Author: Kait Low
 Date: 4/27/2020
-Last Modified: 5/1/2020
+Last Modified: 5/11/2020
 Description: Page containing a editable list view of Disk table.
 FileName: Disk.aspx--%>
 
@@ -12,6 +12,7 @@ FileName: Disk.aspx--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     
     <h1>Check out our collection!</h1>
+<div style="border:solid black 2px; padding-top: 6px; padding-bottom: 6px;">  <%--added styling (5\11\2020)--%>
 
     <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" DataKeyNames="Disk_ID" InsertItemPosition="LastItem">
     <AlternatingItemTemplate>
@@ -52,28 +53,41 @@ FileName: Disk.aspx--%>
             </td>
             <td>
                 <asp:TextBox ID="Disk_nameTextBox" runat="server" Text='<%# Bind("Disk_name") %>' />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Required" ControlToValidate="Disk_nameTextBox" ValidationGroup="Edit">
-                </asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Required" ControlToValidate="Disk_nameTextBox"
+                    ValidationGroup="Edit"></asp:RequiredFieldValidator>
             </td>
             <td>
                 <asp:TextBox ID="Release_dateTextBox" runat="server" Text='<%# Bind("Release_date") %>' />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Required" ControlToValidate="Release_dateTextBox" ValidationGroup="Edit">
-                </asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Required" ControlToValidate="Release_dateTextBox" 
+                    ValidationGroup="Edit"></asp:RequiredFieldValidator>
+                 <%--    added a RegEx validator for Release_Date (5/11/2020)--%>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="*Date Invalid" ValidationGroup="Edit" 
+                    ValidationExpression="^(((0?[1-9]|1[012])/(0?[1-9]|1\d|2[0-8])|(0?[13456789]|1[012])/(29|30)|(0?[13578]|1[02])/31)/(19|[2-9]\d)\d{2}|0?2/29/((19|[2-9]\d)(0[48]|[2468][048]|[13579][26])|(([2468][048]|[3579][26])00)))$"
+                    ControlToValidate="Release_dateTextBox"></asp:RegularExpressionValidator>
             </td>
             <td>
                 <asp:TextBox ID="Status_IDTextBox" runat="server" Text='<%# Bind("Status_ID") %>' />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="Status_IDTextBox" ValidationGroup="Edit">
-                </asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="Status_IDTextBox" 
+                    ValidationGroup="Edit"></asp:RequiredFieldValidator>
+                 <%--    added a range validator for Status_ID (5/11/2020)--%>
+                 <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="*Must be 1, 2, 3, or 4" ControlToValidate="Status_IDTextBox"
+                        Type="Integer" CssClass="form-control" MaximumValue="4" MinimumValue="1" ValidationGroup="Edit"></asp:RangeValidator>
             </td>
             <td>
                 <asp:TextBox ID="Genre_IDTextBox" runat="server" Text='<%# Bind("Genre_ID") %>' />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Required" ControlToValidate="Genre_IDTextBox" ValidationGroup="Edit">
-                </asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Required" ControlToValidate="Genre_IDTextBox"
+                    ValidationGroup="Edit"></asp:RequiredFieldValidator>
+                 <%--    added a range validator for Genre_ID (5/11/2020)--%>
+                 <asp:RangeValidator ID="RangeValidator2" runat="server" ErrorMessage="*Must be 1, 2, 3, or 4" ControlToValidate="Genre_IDTextBox"
+                        Type="Integer" CssClass="form-control" MaximumValue="4" MinimumValue="1" ValidationGroup="Edit"></asp:RangeValidator>
             </td>
             <td>
                 <asp:TextBox ID="Disk_type_IDTextBox" runat="server" Text='<%# Bind("Disk_type_ID") %>' />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*Required" ControlToValidate="Disk_type_IDTextBox" ValidationGroup="Edit">
-                </asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*Required" ControlToValidate="Disk_type_IDTextBox"
+                    ValidationGroup="Edit"></asp:RequiredFieldValidator>
+                <%--    added a range validator for Disk_type_ID (5/11/2020)--%>
+                <asp:RangeValidator ID="RangeValidator3" runat="server" ErrorMessage="*Must be 1, 2, 3, or 4" ControlToValidate="Disk_type_IDTextBox"
+                        Type="Integer" CssClass="form-control" MaximumValue="4" MinimumValue="1" ValidationGroup="Edit"></asp:RangeValidator>
             </td>
         </tr>
     </EditItemTemplate>
@@ -100,21 +114,34 @@ FileName: Disk.aspx--%>
                 <asp:TextBox ID="Release_dateTextBox" runat="server" Text='<%# Bind("Release_date") %>' />
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Required" ControlToValidate="Release_dateTextBox" ValidationGroup="Insert">
                 </asp:RequiredFieldValidator>
+                   <%--    added a RegEx validator for Release_Date (5/11/2020)--%>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="*Date Invalid" ValidationGroup="Insert" 
+                    ValidationExpression="^(((0?[1-9]|1[012])/(0?[1-9]|1\d|2[0-8])|(0?[13456789]|1[012])/(29|30)|(0?[13578]|1[02])/31)/(19|[2-9]\d)\d{2}|0?2/29/((19|[2-9]\d)(0[48]|[2468][048]|[13579][26])|(([2468][048]|[3579][26])00)))$"
+                    ControlToValidate="Release_dateTextBox"></asp:RegularExpressionValidator>
             </td>
             <td>
                 <asp:TextBox ID="Status_IDTextBox" runat="server" Text='<%# Bind("Status_ID") %>' />
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="Status_IDTextBox" ValidationGroup="Insert">
                 </asp:RequiredFieldValidator>
+                   <%--    added a range validator for Status_ID (5/11/2020)--%>
+                <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="*Must be 1, 2, 3, or 4" ControlToValidate="Status_IDTextBox"
+                    Type="Integer" CssClass="form-control" MaximumValue="4" MinimumValue="1" ValidationGroup="Insert"></asp:RangeValidator>
             </td>
             <td>
                 <asp:TextBox ID="Genre_IDTextBox" runat="server" Text='<%# Bind("Genre_ID") %>' />
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Required" ControlToValidate="Genre_IDTextBox" ValidationGroup="Insert">
                 </asp:RequiredFieldValidator>
+                   <%--    added a range validator for Genre_ID (5/11/2020)--%>
+                <asp:RangeValidator ID="RangeValidator2" runat="server" ErrorMessage="*Must be 1, 2, 3, or 4" ControlToValidate="Genre_IDTextBox"
+                    Type="Integer" CssClass="form-control" MaximumValue="4" MinimumValue="1" ValidationGroup="Insert"></asp:RangeValidator>
             </td>
             <td>
                 <asp:TextBox ID="Disk_type_IDTextBox" runat="server" Text='<%# Bind("Disk_type_ID") %>' />
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*Required" ControlToValidate="Disk_type_IDTextBox" ValidationGroup="Insert">
                 </asp:RequiredFieldValidator>
+                   <%--    added a range validator for Disk_type_ID (5/11/2020)--%>
+                <asp:RangeValidator ID="RangeValidator3" runat="server" ErrorMessage="*Must be 1, 2, 3, or 4" ControlToValidate="Disk_type_IDTextBox"
+                    Type="Integer" CssClass="form-control" MaximumValue="4" MinimumValue="1" ValidationGroup="Insert"></asp:RangeValidator>
             </td>
         </tr>
     </InsertItemTemplate>
@@ -227,7 +254,7 @@ FileName: Disk.aspx--%>
         <asp:Parameter Name="Disk_type_ID" Type="Int32" />
     </UpdateParameters>
 </asp:SqlDataSource>
-
+</div>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="FooterContent" runat="server">

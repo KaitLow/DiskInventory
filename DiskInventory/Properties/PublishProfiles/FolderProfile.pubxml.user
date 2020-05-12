@@ -10,19 +10,58 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="Artist.aspx">
-      <publishTime>05/01/2020 16:10:46</publishTime>
+      <publishTime>05/11/2020 17:48:42</publishTime>
     </File>
     <File Include="bin/AspNet.ScriptManager.jQuery.dll">
       <publishTime>05/16/2019 12:33:30</publishTime>
     </File>
     <File Include="bin/DiskInventory.dll">
-      <publishTime>05/01/2020 16:14:15</publishTime>
+      <publishTime>05/11/2020 18:29:00</publishTime>
+    </File>
+    <File Include="bin/DiskInventory.dll.config">
+      <publishTime>05/11/2020 15:43:59</publishTime>
     </File>
     <File Include="bin/DiskInventory.pdb">
-      <publishTime>05/01/2020 16:14:15</publishTime>
+      <publishTime>05/11/2020 18:29:00</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/25/2014 01:34:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/25/2014 01:34:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>11/25/2019 10:57:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>11/25/2019 10:57:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>11/25/2019 10:57:50</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>11/12/2019 18:46:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>11/12/2019 18:47:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 13:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 12:19:34</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2018 05:38:48</publishTime>
@@ -172,16 +211,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/08/2018 12:18:16</publishTime>
     </File>
     <File Include="Borrower.aspx">
-      <publishTime>05/01/2020 15:58:04</publishTime>
+      <publishTime>05/11/2020 18:26:12</publishTime>
     </File>
     <File Include="Content/styles.css">
-      <publishTime>05/01/2020 16:04:34</publishTime>
+      <publishTime>05/11/2020 17:04:22</publishTime>
     </File>
     <File Include="Default.aspx">
       <publishTime>04/27/2020 04:14:00</publishTime>
     </File>
     <File Include="Disk.aspx">
-      <publishTime>05/01/2020 15:58:25</publishTime>
+      <publishTime>05/11/2020 18:27:55</publishTime>
+    </File>
+    <File Include="Error.aspx">
+      <publishTime>05/08/2020 14:27:46</publishTime>
     </File>
     <File Include="Images/facebook.png">
       <publishTime>04/17/2020 14:01:22</publishTime>
@@ -197,6 +239,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="libman.json">
       <publishTime>05/01/2020 16:13:49</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>05/11/2020 17:21:18</publishTime>
+    </File>
+    <File Include="Register.aspx">
+      <publishTime>05/11/2020 17:22:07</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.js">
       <publishTime>04/27/2020 15:42:43</publishTime>
@@ -217,10 +265,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/27/2020 15:42:43</publishTime>
     </File>
     <File Include="Site1.Master">
-      <publishTime>05/01/2020 16:11:21</publishTime>
+      <publishTime>05/11/2020 17:29:18</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/01/2020 16:14:15</publishTime>
+      <publishTime>05/11/2020 18:29:01</publishTime>
     </File>
   </ItemGroup>
 </Project>

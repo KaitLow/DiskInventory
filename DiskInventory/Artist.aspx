@@ -1,7 +1,7 @@
 ﻿<%--SWDV-235 Spring Semester 2020
 Author: Kait Low
 Date: 4/27/2020
-Last Modified: 5/1/2020
+Last Modified: 5/11/2020
 Description: Page containing a editable list view of Artist table.
 FileName: Artist.aspx--%>
 
@@ -12,7 +12,7 @@ FileName: Artist.aspx--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <h1>Here's a list of great artists!</h1>
-
+    <fieldset> <%--added fieldset (5\11\2020)--%>
     <asp:ListView ID="ListView1" runat="server" DataKeyNames="Artist_ID" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">
         <AlternatingItemTemplate>
             <tr style="background-color:#FFF8DC;">
@@ -55,7 +55,10 @@ FileName: Artist.aspx--%>
                 <td>
                     <asp:TextBox ID="Artist_type_IDTextBox" runat="server" Text='<%# Bind("Artist_type_ID") %>' />
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="Artist_type_IDTextBox" 
-                        ValidationGroup="Edit"></asp:RequiredFieldValidator>
+                        ValidationGroup="Edit" CssClass="form-control"></asp:RequiredFieldValidator>
+                <%--    added a range validator for Artist_type_ID (5/11/2020)--%>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="*Must be 1, 2, 3, or 4" ControlToValidate="Artist_type_IDTextBox" 
+                        Type="Integer" CssClass="form-control" MaximumValue="4" MinimumValue="1" ValidationGroup="Edit"></asp:RangeValidator>
                 </td>
             </tr>
         </EditItemTemplate>
@@ -85,6 +88,9 @@ FileName: Artist.aspx--%>
                     <asp:TextBox ID="Artist_type_IDTextBox" runat="server" Text='<%# Bind("Artist_type_ID") %>' />
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Required" ControlToValidate="Artist_type_IDTextBox" 
                         ValidationGroup="Insert"></asp:RequiredFieldValidator>
+                      <%--    added a range validator for Artist_type_ID (5/11/2020)--%>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="*Must be 1, 2, 3, or 4" ControlToValidate="Artist_type_IDTextBox" 
+                        Type="Integer" CssClass="form-control" MaximumValue="4" MinimumValue="1" ValidationGroup="Insert"></asp:RangeValidator>
                 </td>
             </tr>
         </InsertItemTemplate>
@@ -112,8 +118,8 @@ FileName: Artist.aspx--%>
             <table runat="server">
                 <tr runat="server">
                     <td runat="server">
-                        <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;
-                            border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
+                        <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;
+                        border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
                             <tr runat="server" style="background-color:#DCDCDC;color: #000000;">
                                 <th runat="server"></th>
                                 <th runat="server">Artist_ID</th>
@@ -183,7 +189,7 @@ FileName: Artist.aspx--%>
             <asp:Parameter Name="Artist_type_ID" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-
+</fieldset>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="FooterContent" runat="server">

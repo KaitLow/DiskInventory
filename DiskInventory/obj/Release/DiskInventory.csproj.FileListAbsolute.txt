@@ -50,11 +50,11 @@ C:\DiskInventory\DiskInventory\bin\roslyn\vbc.exe.config
 C:\DiskInventory\DiskInventory\bin\roslyn\vbc.rsp
 C:\DiskInventory\DiskInventory\bin\roslyn\VBCSCompiler.exe
 C:\DiskInventory\DiskInventory\bin\roslyn\VBCSCompiler.exe.config
-C:\DiskInventory\DiskInventory\bin\AspNet.ScriptManager.jQuery.dll
-C:\DiskInventory\DiskInventory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\DiskInventory\DiskInventory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.csproj.CoreCompileInputs.cache
 C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.csproj.CopyComplete
 C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.dll
 C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.pdb
 C:\DiskInventory\DiskInventory\obj\Release\DiskInventory.csprojAssemblyReference.cache
+C:\DiskInventory\DiskInventory\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\DiskInventory\DiskInventory\bin\Microsoft.Owin.Host.SystemWeb.xml
