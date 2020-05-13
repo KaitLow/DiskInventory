@@ -1,7 +1,7 @@
 ﻿<%--SWDV-235 Spring Semester 2020
 Author: Kait Low
 Date: 4/27/2020
-Last Modified: 5/8/2020
+Last Modified: 5/13/2020
 Description: Master page of DiskInventory
 FileName: Site1.Master--%>
 
@@ -30,17 +30,15 @@ FileName: Site1.Master--%>
 		        <li><a href="Artist.aspx">Artists</a></li>
 		        <li><a href="Disk.aspx">Disks</a></li>
                 <li><a href="Borrower.aspx">How to Borrow</a></li>
-                <li runat="server">
-                    <asp:PlaceHolder runat="server" ID="LogOutButton" visible="false">
-                      <%--  <div>
-                            <div>--%>
-                                <asp:Button runat="server" OnClick="SignOut" Text="Log Out" />
-                     <%--       </div>
-                        </div>--%>
-                    </asp:PlaceHolder>
+                <li runat="server">  <%--added button for loging/out (5/13/2020)--%>
+                     <asp:PlaceHolder runat="server" ID="LogOutButton" visible="true">                               
+                        <asp:Button runat="server" OnClick="SignOut" Text="Login/out" Font-Names="Courier New" Font-Size="1em" 
+                            CssClass="Buttons" Font-Underline="True" ForeColor="#122620" BackColor="#D6AD60" BorderColor="#F4EBD0" Font-Bold="True" BorderWidth="3px" />                   
+                    </asp:PlaceHolder>   
                 </li>
 		        </ul>		
-	         </nav>	
+	         </nav>       
+                      
            </header>
             <main>
 

@@ -1,7 +1,7 @@
 ﻿/*SWDV-235 Spring Semester 2020
 Author: Kait Low
 Date: 4/27/2020
-Modified: 4/27/2020
+Modified: 5/13/2020
 FileName: styles.css*/
 
 
@@ -50,7 +50,7 @@ nav ul li {
 nav ul li a {
     color: #122620;
     text-shadow: #F4EBD0;
-    transition: color 0.5s ease-in 0.5s, font-size 0.5s ease, letter-spacing 1s ease-out, text-shadow 1s cubic-bezier(0.6, 0, 0.8, 0.5);
+    transition: color 0.1s ease-in 0.1s, font-size 0.1s ease, letter-spacing 0.1s ease-out, text-shadow 0.1s cubic-bezier(0.2, 0, 0.2, 0.2);
 }
 
 nav ul li a:hover {

@@ -19,7 +19,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/11/2020 18:29:00</publishTime>
     </File>
     <File Include="bin/DiskInventory.dll.config">
-      <publishTime>05/11/2020 15:43:59</publishTime>
+      <publishTime>05/13/2020 15:01:20</publishTime>
     </File>
     <File Include="bin/DiskInventory.pdb">
       <publishTime>05/11/2020 18:29:00</publishTime>
@@ -214,7 +214,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/11/2020 18:26:12</publishTime>
     </File>
     <File Include="Content/styles.css">
-      <publishTime>05/11/2020 17:04:22</publishTime>
+      <publishTime>05/13/2020 15:42:12</publishTime>
     </File>
     <File Include="Default.aspx">
       <publishTime>04/27/2020 04:14:00</publishTime>
@@ -265,10 +265,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/27/2020 15:42:43</publishTime>
     </File>
     <File Include="Site1.Master">
-      <publishTime>05/11/2020 17:29:18</publishTime>
+      <publishTime>05/13/2020 15:33:55</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/11/2020 18:29:01</publishTime>
+      <publishTime>05/13/2020 15:45:14</publishTime>
     </File>
   </ItemGroup>
 </Project>
