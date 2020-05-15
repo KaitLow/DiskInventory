@@ -20,7 +20,7 @@ FileName: Register.aspx--%>
         </p>   
     <<fieldset>
         <div style="margin-bottom:10px">
-            <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="UserName">Username</asp:Label>
             <div>
                 <asp:TextBox runat="server" ID="UserName" />                
             </div>

@@ -16,13 +16,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/16/2019 12:33:30</publishTime>
     </File>
     <File Include="bin/DiskInventory.dll">
-      <publishTime>05/11/2020 18:29:00</publishTime>
+      <publishTime>05/15/2020 02:36:57</publishTime>
     </File>
     <File Include="bin/DiskInventory.dll.config">
       <publishTime>05/13/2020 15:01:20</publishTime>
     </File>
     <File Include="bin/DiskInventory.pdb">
-      <publishTime>05/11/2020 18:29:00</publishTime>
+      <publishTime>05/15/2020 02:36:57</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>02/25/2014 01:34:42</publishTime>
@@ -241,10 +241,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/01/2020 16:13:49</publishTime>
     </File>
     <File Include="Login.aspx">
-      <publishTime>05/11/2020 17:21:18</publishTime>
+      <publishTime>05/15/2020 02:36:47</publishTime>
     </File>
     <File Include="Register.aspx">
-      <publishTime>05/11/2020 17:22:07</publishTime>
+      <publishTime>05/15/2020 02:35:56</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.js">
       <publishTime>04/27/2020 15:42:43</publishTime>
